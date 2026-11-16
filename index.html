@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a cat photo application">
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+          rel="stylesheet">
+        <style>
+            p {
+                color: blue;
+                font-size: 16px;
+            }
+            
+            .red-text {
+                color: red;
+                font-family: 'lobster', hervatica;
+            }
+
+            .silver-background {
+                background-color: silver;
+            }
+
+            .lightskyblue-background {
+                background-color: lightskyblue;
+            }
+
+            .large-image {
+                width: 500px;
+            }
+
+            .small-image {
+                width: 100px;
+            }
+
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+
+            #cat-photo-form {
+                color: green;
+                background-color: red;
+            }
+
+        </style>
+
+        <h2 class="red-text silver-background thick-green-border">CatPhotoApp</h2>
+        <main>
+            <h3 class="red-text">Cat Photos</h3>
+            <!-- TODO: Add link to cat photos -->
+
+            <p>Cat Photos</p>   
+
+            <img class="thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="An orange cat lying on its back">
+
+            <h3>Cat Lists</h3>
+            <p>Cats hate other cats.</p>
+
+            <div class="silver-background">
+                <p>Things cats love</p>
+
+                <ul>
+                    <li>Cat nip</li>
+                    <li>laser pointer</li>
+                    <li>lesagna</li>
+                </ul>
+
+                <img class="small-image" src="lesagna.jpeg" alt="lesagna">
+
+                <p>Things cats hate</p>
+
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+           
+                <img src="four cats.jpeg" alt="four cute cats">
+            </div>
+            <div class="lightskyblue-background large-image">
+                <form id="cat-photo-form">
+                    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked>indoor</label><br>
+                    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor">outdoor</label><br>
+
+                    <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label><br>
+                    <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label><br>
+                    <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label><br>
+
+                    <input type="text" placeholder="cat photo URL" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>No Copyright - thinkcommunity-tc.com</p>
+        </footer>
+    </body>
+</html>
